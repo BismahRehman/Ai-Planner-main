@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('workout_plan') }}">Workout</a></li>
+                <li><a href="{{ url_for('diet') }}">Diet</a></li>
+                <li><a href="{{ url_for('progress') }}">Progress</a></li>
+                <li><a href="{{ url_for('goal') }}">Goals</a></li>
+
+                <li><a href="{{ url_for('aichat') }}">AIChat</a></li>
+
+                
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <a href="#">Sign In</a>
+            <a href="#">Log In</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Achieve Your Fitness Goals!</h2>
+            <a href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Open+Sans:wght@400;600&display=swap" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="feature">
+            <h3>Workouts</h3>
+            <p>Personalized workout plans.</p>
+        </div>
+        <div class="feature">
+            <h3>Diet Plans</h3>
+            <p>Healthy diet recommendations.</p>
+        </div>
+        <div class="feature">
+            <h3>Progress</h3>
+            <p>Track your fitness journey.</p>
+        </div>
+    </section>
+    <section class="summary">
+        <div class="summary-container">
+            <div class="summary-text">
+                <h3>About Our Website</h3>
+                <p>
+                    Welcome to our fitness platform, where your health and wellness come first. 
+                    We offer personalized workout plans, healthy diet recommendations, and tools to 
+                    track your progress. Our goal is to help you achieve a healthier, happier lifestyle.
+                </p>
+                <p>
+                    Join our community today and take the first step towards achieving your fitness goals!
+                </p>
+            </div>
+            <div class="summary-image">
+                <img src="/static/fitness-summary.jpg" alt="Fitness Summary">
+            </div>
+        </div>
+    </section>
+
+    <section class="why-join">
+        <h3>Why You Should Join Us</h3>
+        <div class="reasons-container">
+            <div class="reason">
+                <img src="/static/personalized-plans.png" alt="Personalized Plans">
+                <h4>Personalized Plans</h4>
+                <p>
+                    We tailor workouts and diet plans to your unique goals and preferences, ensuring effective results.
+                </p>
+            </div>
+            <div class="reason">
+                <img src="/static/community-support.jpeg" alt="Community Support">
+                <h4>Community Support</h4>
+                <p>
+                    Join a vibrant community of fitness enthusiasts for motivation and shared experiences.
+                </p>
+            </div>
+            <div class="reason">
+                <img src="/static/progress-tracking.jpeg" alt="Progress Tracking">
+                <h4>Track Your Progress</h4>
+                <p>
+                    Monitor your fitness journey with detailed analytics and stay on top of your goals.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h4>About Us</h4>
+                <p>Your go-to platform for achieving fitness goals with personalized plans, expert guidance, and community support.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Workout</a></li>
+                    <li><a href="#">Diet Plans</a></li>
+                    <li><a href="#">Progress</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><img src="/static/facebook-icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="/static/twitter-icon.png" alt="Twitter"></a>
+                    <a href="#"><img src="/static/instagram-icon.png" alt="Instagram"></a>
+                    <a href="#"><img src="/static/linkedin-icon.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Fitness App. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+
+    
+</body>
+</html>

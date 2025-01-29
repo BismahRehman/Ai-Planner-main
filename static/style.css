@@ -1,0 +1,321 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    position: relative;
+}
+
+header .logo img {
+    width: 100px; /* Adjust logo size as needed */
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Authentication Buttons Styling */
+.auth-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.auth-buttons a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 10px 15px;
+    background-color: #28a745;
+    border-radius: 5px;
+}
+
+.auth-buttons a:hover {
+    background-color: #218838;
+}
+
+/* Hero Section Styling */
+.hero {
+    position: relative;
+    height: 100vh;
+    background-image: url('/static/pexels-willpicturethis-1954524.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Overlay Effect */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* Black overlay with transparency */
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Smooth fade-in/out */
+    z-index: 1; /* Ensure it is below the content */
+}
+
+/* Hover Effect for Overlay */
+.hero:hover::before {
+    opacity: 1;
+}
+/* Hero Content */
+.hero-content {
+    position: relative; /* Ensures content is above the overlay */
+    z-index: 2;
+}
+
+
+/* Hero Content */
+.hero-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: rgb(244, 243, 243);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover Effect */
+.cta-button:hover {
+    transform: scale(1.1); /* Increases the size */
+    background-color: #21cb5a; /* Makes the button brighter */
+    color: #fff; /* Ensures the text stays white and readable */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Glow effect */
+}
+
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.feature {
+    background-color: rgb(250, 249, 249);
+    padding: 1rem;
+    text-align: center;
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* Summary Section Styling */
+.summary {
+    background-color: #fff;
+    padding: 3rem 1rem;
+}
+
+.summary-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+.summary-text {
+    flex: 1;
+}
+
+.summary-text h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.summary-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.summary-image {
+    flex: 1;
+    text-align: center;
+}
+
+.summary-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* Why Join Us Section */
+.why-join {
+    background-color: #e0e0e0;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.why-join h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.reasons-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #e0e0e0;
+
+
+}
+
+.reason {
+    background-color: #f7f4f4;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reason img {
+    width: 100px;
+    margin-bottom: 1rem;
+}
+
+.reason h4 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.reason p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.reason:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Section Styling */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 2rem 1rem;
+    font-size: 0.9rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-about,
+.footer-links,
+.footer-social {
+    width: 30%;
+    margin-bottom: 1rem;
+}
+
+.footer-about h4,
+.footer-links h4,
+.footer-social h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #f4f4f4;
+}
+
+.footer-about p {
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+   
+}
+
+.footer-links ul li {
+    margin-bottom: 0.5rem;
+    color: #ccc;
+    
+
+}
+
+.footer-links ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #28a745; /* Green hover effect */
+}
+
+.footer-social .social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    
+}
+
+.footer-social .social-icons img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.footer-social .social-icons a:hover img {
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 1px solid #444;
+    color: #aaa;
+}
+
+
+
